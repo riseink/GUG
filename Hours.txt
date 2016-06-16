@@ -1,0 +1,12 @@
+<6.10.16> 4 hours: 
+-- Initial Directory / technology setup (jekyll jeet SASS JQUERY)
+-- Hero / Nav / Assets 
+
+<6.12.16> 6 hours 
+-- Home page build 
+-- Carousel Integration / custom CTA 
+-- Prior Boxes Zone 
+-- Start Footer Build
+
+<6.13.16> 2 hours 
+-- Finish Footer 

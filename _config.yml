@@ -1,0 +1,6 @@
+name: Giddy Up Goodies
+markdown: redcarpet
+pygments: true
+
+gems:
+  - jekyll-assets
