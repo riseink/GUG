@@ -1,14 +1,24 @@
 nav{
-	position:fixed;
+	position:absolute;
 	width:100%;
 	z-index:99;
+	top:0;
 	
+	.hamburger{
+		display:none;
+	}
 	
 }
+
+
 
 .logo-container{
 	display:block;
     @include span(2/10);
+	height:202px;
+	background:url('../img/nav-logo.png');
+	background-repeat:no-repeat;
+	background-position: 0 0 ;
 		
 	
 }
@@ -47,4 +57,85 @@ nav{
 		text-decoration:underline;
 		
 	}
+}
+
+
+nav.fixed{
+	position:fixed;
+	background:transparent;
+	height:60px;
+	
+	.hamburger{
+		display:block;
+		width:44px;
+		height:27px;
+		background:url('../img/hamburger.png');
+		z-index:100;
+		margin-left:20px;
+		margin-top:15px;
+		
+		
+	}
+	
+	.logo-container {
+		display:none;
+		
+		width:60px !important;
+		height:48px;
+		margin-top:6px;
+		width:auto;
+		float:left;
+		background:url('../img/sticky-logo.png');
+	}
+	
+	.nav-list{
+		display:none;
+		margin-top:16px;
+	}
+	
+	
+}
+
+
+nav.fixed.show-nav{
+	position:fixed;
+	background:white;
+	height:60px;
+	
+	.hamburger{
+		display:block;
+		width:36px;
+		height:36px;
+		background:url('../img/hamburger-close.png');
+		z-index:100;
+		float:left;
+		
+	}
+	
+	.logo-container {
+		display:block;
+		
+		width:60px !important;
+		height:48px;
+		margin-top:6px;
+		width:auto;
+		float:left;
+		margin-left:20px;
+		background:url('../img/sticky-logo.png');
+	}
+	
+	.nav-list{
+		display:block;
+		margin-top:16px;
+		
+		
+		a{
+			color:$color-1;
+			
+		}
+		
+	
+	}
+	
+	
 }
