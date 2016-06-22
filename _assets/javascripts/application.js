@@ -15,7 +15,7 @@ var app = {
 		this.initSlickCarousel();
         this.initOwlCarousel();
 		this.initMagnificPopup();
-		this.initScrollTimeOut();
+		this.initNavControls();
 		
         
     },
@@ -43,6 +43,17 @@ var app = {
    	     asNavFor: '.slider-nav',
    	     dots: false,
 		   
+		   responsive: [
+		      {
+		        breakpoint: 650,
+		        settings: {
+		          slidesToShow: 2,
+		          slidesToScroll: 1,
+
+		        }
+		      }
+		    ]
+		   
    	   });
 
 	   
@@ -51,6 +62,17 @@ var app = {
   	     slidesToScroll: 1,
   	     asNavFor: '.slider-for',
   	     dots: true,
+		   
+		   responsive: [
+		      {
+		        breakpoint: 650,
+		        settings: {
+		          slidesToShow: 2,
+		          slidesToScroll: 1,
+
+		        }
+		      }
+		    ]
   	   });
 	},
 	
@@ -95,9 +117,19 @@ var app = {
 		
     },
 	
-	initScrollTimeOut: function () {
+	initNavControls: function () {
 		
 		var scrollticker; // - don't need to set this in every scroll
+		
+      	if ($(window).width() <= 640){  
+	  		  $('nav').addClass('fixed');
+			  
+	  		$(".hamburger").on('click touchstart',function(){
+	  			$('nav.fixed').toggleClass('show-nav');
+	  		});
+      	}
+		
+		else {
 
 		$(window).scroll(function() {
 		  // Clear Timeout if one is pending
@@ -109,18 +141,24 @@ var app = {
 				  $('nav').addClass('fixed');
 			  }
 			  
+			  
 			  else{
 				  $('nav').removeClass('fixed');
 			  }
 
 
 		  }, 250); // Timeout in msec
+		  
+
+		  
 		});
 		
 		
 		$(".hamburger").on('click touchstart',function(){
 			$('nav.fixed').toggleClass('show-nav');
 		});
+		
+		}
 	},
 	
 	
@@ -152,7 +190,9 @@ $(document).ready(function(){
     app.initialize();
 
     $(window).on("resize", function(){
-		// RESIZE
+		this.initNavControls();
+		this.initSlickCarousel();
+		
     });
 	
 	$(window).load(function() {

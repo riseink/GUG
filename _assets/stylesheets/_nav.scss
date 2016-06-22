@@ -8,6 +8,13 @@ nav{
 		display:none;
 	}
 	
+    @include respond-to(sm) {
+		
+		.hamburger{
+			display:block;
+		}
+    }
+	
 }
 
 
@@ -93,6 +100,10 @@ nav.fixed{
 		margin-top:16px;
 	}
 	
+    @include respond-to(sm) {
+		background:url('../img/nav-BG-mobile.jpg');
+    }
+	
 	
 }
 
@@ -101,6 +112,8 @@ nav.fixed.show-nav{
 	position:fixed;
 	background:white;
 	height:60px;
+	
+
 	
 	.hamburger{
 		display:block;
@@ -136,6 +149,41 @@ nav.fixed.show-nav{
 		
 	
 	}
+	
+    @include respond-to(sm) {
+		background:url('../img/nav-BG-mobile.jpg');
+		
+		.nav-list{
+			display:block;
+		    position: relative;
+		    top: 6px;			
+			width:100%;
+			background:$color-1;
+		    @include stack();
+			height:140px;
+			
+			
+			li{
+			    @include stack();
+				
+			}
+		
+		
+			a{
+				color:white!important;
+				display:block;
+			    width: 100%;
+			    text-align: center;
+				padding:10px;
+
+				
+			
+			}
+		
+	
+		}
+	
+    }
 	
 	
 }
