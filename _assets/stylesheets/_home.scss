@@ -181,7 +181,7 @@
 		}
 		
 		h3{
-			font-size:45px;
+			font-size:40px;
 			
 		}
 	
@@ -396,6 +396,10 @@
 		padding:0 0 10px 0;
 		width:100%;
 		text-align:center;
+		
+	    @include respond-to(sm) {
+			font-size:12px;
+	    }
 		
 	}
 	
