@@ -85,7 +85,7 @@ var app = {
 	      items: 1,
 		  responsive: true,
 		  responsiveBaseWidth: 'span-full',
-		  autoPlay: true,
+		  // autoPlay: true,
 		  baseClass: 'target-home-carousel',
 	      dots: true
 	    });

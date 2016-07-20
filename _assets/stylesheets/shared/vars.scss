@@ -1,7 +1,7 @@
 @mixin respond-to($breakpoint) {
 	
   @if $breakpoint == "xxs" {
-    @media (max-width: 350px) {
+    @media (max-width: 376px) {
       @content;
     }
   }
