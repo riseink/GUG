@@ -37,18 +37,32 @@
     @include respond-to(sm) {
 	  padding-bottom:62.5%;
     }
+	
+    @include respond-to(xxs) {
+	  padding-bottom:80%;
+    }
 } 
 
 .hero-slide-1{
 	background:url(../img/hero1.jpg);
+    @include respond-to(xxs) {
+		background-position:-180px 0;
+    }
+	
 }
 
 .hero-slide-2{
 	background:url(../img/hero2.jpg);
+    @include respond-to(xxs) {
+		background-position:-180px 0;
+    }
 }
 
 .hero-slide-3{
 	background:url(../img/hero3.jpg);
+    @include respond-to(xxs) {
+		background-position:-180px 0;
+    }
 }
 
 .carousel-copy-container{

@@ -35,6 +35,11 @@ footer{
 
 	.button-container{
 		display:none;
+		
+
+		
+
+		
 	    @include respond-to(sm) {
 			display:block;
 		
@@ -72,10 +77,20 @@ footer{
 			}
 		
 		}
+		
+		
+	    @include respond-to(xxs) {
+			width: 100%;
+			
+			.button{
+				font-size:22px;
+			}
+
+		}
 	}
 	
     @include respond-to(sm) {
-	    @include span(1/3, $offset: 1/3 );
+	    @include span(1/2, $offset: 1/4 );
 		position:relative;
 		bottom:auto;
 		left:auto;

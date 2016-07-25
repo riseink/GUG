@@ -51,6 +51,15 @@ var app = {
 		          slidesToScroll: 1,
 
 		        }
+		      },
+			  
+		      {
+		        breakpoint: 380,
+		        settings: {
+		          slidesToShow: 1,
+		          slidesToScroll: 1,
+
+		        }
 		      }
 		    ]
 		   
@@ -68,6 +77,14 @@ var app = {
 		        breakpoint: 650,
 		        settings: {
 		          slidesToShow: 2,
+		          slidesToScroll: 1,
+
+		        }
+		      },
+		      {
+		        breakpoint: 380,
+		        settings: {
+		          slidesToShow: 1,
 		          slidesToScroll: 1,
 
 		        }
@@ -124,7 +141,7 @@ var app = {
       	if ($(window).width() <= 640){  
 	  		  $('nav').addClass('fixed');
 			  
-	  		$(".hamburger").on('click touchstart',function(){
+	  		$(".hamburger").on('click',function(){
 	  			$('nav.fixed').toggleClass('show-nav');
 	  		});
       	}
@@ -154,7 +171,7 @@ var app = {
 		});
 		
 		
-		$(".hamburger").on('click touchstart',function(){
+		$(".hamburger").on('click',function(){
 			$('nav.fixed').toggleClass('show-nav');
 		});
 		
