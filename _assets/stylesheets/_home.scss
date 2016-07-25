@@ -38,14 +38,18 @@
 	  padding-bottom:62.5%;
     }
 	
-    @include respond-to(xxs) {
+    @include respond-to(xs) {
 	  padding-bottom:80%;
+    }
+	
+    @include respond-to(xs) {
+	  padding-bottom:100%;
     }
 } 
 
 .hero-slide-1{
 	background:url(../img/hero1.jpg);
-    @include respond-to(xxs) {
+    @include respond-to(xs) {
 		background-position:-180px 0;
     }
 	
@@ -53,14 +57,14 @@
 
 .hero-slide-2{
 	background:url(../img/hero2.jpg);
-    @include respond-to(xxs) {
+    @include respond-to(xs) {
 		background-position:-180px 0;
     }
 }
 
 .hero-slide-3{
 	background:url(../img/hero3.jpg);
-    @include respond-to(xxs) {
+    @include respond-to(xs) {
 		background-position:-180px 0;
     }
 }
@@ -98,7 +102,7 @@
 	
 	}
 	
-    @include respond-to(xxs) {
+    @include respond-to(xs) {
 	    @include span(6/10);
 		
 		h3{
@@ -145,7 +149,7 @@
 			background:$color-1c;
 			
 		}
-	    @include respond-to(xxs) {
+	    @include respond-to(xs) {
 			width: 180px!important;
 		}
 		
@@ -187,7 +191,7 @@
 	
 	}
 	
-    @include respond-to(xxs) {
+    @include respond-to(xs) {
 	    @include span(30/100);
 		font-size:11px;
 		right:0px;
@@ -245,7 +249,7 @@
 	}
 	
 	
-    @include respond-to(xxs) {
+    @include respond-to(xs) {
 	    @include span(1/1);
 		
 		p{
@@ -295,7 +299,7 @@
 			
 		}
 		
-	    @include respond-to(xxs) {
+	    @include respond-to(xs) {
 			width: 180px!important;
 		}
 		
@@ -356,9 +360,23 @@
 	}
 	
     @include respond-to(sm) {
-	    @include span(7/10, $offset:25/100);
+	    @include span(7/10, $offset:20/100);
+		
+		p{
+			font-size:17px;	
+			
+		}
+		
+		h3{
+			font-size:19px;
+			line-height:27px;
+			
+		}
+		
 	
 	}
+	
+	
 	
 	.button-container{
 		
@@ -394,7 +412,7 @@
 			
 		}
 		
-	    @include respond-to(xxs) {
+	    @include respond-to(xs) {
 			width: 180px!important;
 		}
 		
@@ -524,4 +542,6 @@
 	width:100%;
 	background:$color-1;
 }
+
+
 
