@@ -1,0 +1,144 @@
+.hero-slide-subscribe{
+	background:url(../img/subscribe-hero.jpg);
+    @include respond-to(xs) {
+		background-position:-180px 0;
+    }
+}
+
+
+#USA_flag{
+background:url(../img/USA-flag.png);
+width:39px;
+height:25px;
+background-repeat:no-repeat;
+display:inline-block;
+
+}
+
+.active_subscribe{
+	border:3px solid black;
+}
+
+#CANADA_flag{
+background:url(../img/CA-flag.png);
+width:39px;
+height:25px;
+background-repeat:no-repeat;
+display:inline-block;
+margin-left:20px;
+}
+
+.flag-container {
+	float:right;
+	position:absolute;
+	top:40px;
+	right:30px;
+}
+
+
+
+
+.subscription-container{
+    @include span(1/1);
+	
+	h3{
+		font-family: "futura-pt", sans-serif;
+		font-weight:400;
+		color:$color-1;
+		font-size:35px;
+		
+		
+	}
+	
+}
+
+.subscribe-usa{
+	display:block;
+	
+}
+
+.subscribe-canada{
+	display:none;
+}
+
+.subscrition{
+    @include span(1/4);
+	
+}
+
+.subscription-option-1{
+	padding:0px 10px 0px 20px;
+	
+}
+
+.subscription-option-2{
+	padding:0px 15px 0px 15px;
+	
+	
+}
+
+.subscription-option-3{
+	padding:0px 15px 0px 15px;
+	
+}
+
+.subscription-option-4{
+	padding:0px 20px 0px 10px;
+	
+}
+
+.button-container{
+    @include span(1/1);
+	height:186px;
+	
+}
+
+
+.receive-subscription{
+	width:228px;
+	height:auto;
+	position:absolute;
+	left:50%;
+	top:45px;
+	margin-left:-114px;
+	
+}
+
+
+
+.pad-quarter-container{
+	padding:60px;
+}
+
+.what-to-expect{
+	font-family: "futura-pt", sans-serif;
+	color:$color-1;
+	text-align:center;
+	
+	h1{
+		font-weight:700;
+		font-size:40px;
+	}
+	
+	p{
+		font-size:20px;
+		
+	}
+}
+
+
+.little-bit{
+	
+	font-family: "futura-pt", sans-serif;
+	color:#fff;
+	text-align:center;
+	margin-top:20px;
+	
+	h1{
+		font-weight:700;
+		font-size:40px;
+	}
+	
+}
+
+

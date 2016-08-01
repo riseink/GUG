@@ -81,6 +81,7 @@
 
 
 
+
 a.offset_anchor{
 	display: block; 
 	position: relative; 
@@ -88,3 +89,16 @@ a.offset_anchor{
 	visibility: hidden;
 }
 
+.position-relative{
+	position:relative;
+}
+
+.span-full{
+    @include span(1/1);
+	
+}
+
+.quarters{
+    @include span(1/4);
+	
+}
