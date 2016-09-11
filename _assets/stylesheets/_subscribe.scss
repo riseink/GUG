@@ -142,3 +142,24 @@ margin-left:20px;
 }
 
 
+.bit-box-subscribe-container{
+    @include span(1/4, $offset:375/1000);
+	
+}
+
+.subscription-padding{
+
+	padding:15px;
+}
+
+.bit-subscribe-button{
+	width:100%;
+}
+
+.bit-box-subscribe-container{
+	margin-top:25px;
+}
+
+.push-left-center-3{
+    @include span(3/4, $offset:125/1000);
+}

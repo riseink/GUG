@@ -16,6 +16,7 @@ var app = {
         this.initOwlCarousel();
 		this.initMagnificPopup();
 		this.initNavControls();
+		this.initPayPal();
 		
         
     },
@@ -133,6 +134,27 @@ var app = {
 	
 		
     },
+	
+	initPayPal: function (){
+	
+		$("#us_1_mo").click(function() {
+			$('input[name=a3]').val('47.00');
+		});
+		
+		$("#us_3_mo").click(function() {
+			$('input[name=a3]').val('44.00');
+		});
+		
+		$("#us_6_mo").click(function() {
+			$('input[name=a3]').val('42.00');
+		});
+		
+		$("#us_12_mo").click(function() {
+			$('input[name=a3]').val('40.00');
+		});
+	
+		
+	},
 	
 	initNavControls: function () {
 		
