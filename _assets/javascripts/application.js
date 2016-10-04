@@ -17,6 +17,8 @@ var app = {
 		this.initMagnificPopup();
 		this.initNavControls();
 		this.initPayPal();
+		this.initActiveSelection();
+		this.initCanadaToggle();
 		
         
     },
@@ -152,6 +154,22 @@ var app = {
 		$("#us_12_mo").click(function() {
 			$('input[name=a3]').val('40.00');
 		});
+		
+		$("#ca_1_mo").click(function() {
+			$('input[name=a3]').val('52.00');
+		});
+		
+		$("#ca_3_mo").click(function() {
+			$('input[name=a3]').val('49.00');
+		});
+		
+		$("#ca_6_mo").click(function() {
+			$('input[name=a3]').val('47.00');
+		});
+		
+		$("#ca_12_mo").click(function() {
+			$('input[name=a3]').val('45.00');
+		});
 	
 		
 	},
@@ -198,6 +216,40 @@ var app = {
 		});
 		
 		}
+	},
+	
+	initActiveSelection: function(){
+		
+		
+	    $('.subscrition').on('click',function(){
+		  $(".round-image").removeClass('active_subscribe');
+	      $(this).find(".round-image").toggleClass('active_subscribe');
+
+	     });
+		
+	},
+	
+	initCanadaToggle: function(){
+		
+		$('#canadaFlag').on('click',function(){
+			$('#usaFlag').removeClass('active_subscribe');
+			$('#canadaFlag').addClass('active_subscribe');
+			$('.subscribe-usa').hide();
+			$('.subscribe-canada').show();
+		
+		});
+		
+		
+		$('#usaFlag').on('click',function(){
+			$('#canadaFlag').removeClass('active_subscribe');
+			$('#usaFlag').addClass('active_subscribe');
+			$('.subscribe-usa').show();
+			$('.subscribe-canada').hide();
+		
+		});
+		
+
+		
 	},
 	
 	

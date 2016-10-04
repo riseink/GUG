@@ -6,7 +6,7 @@
 }
 
 
-#USA_flag{
+#usaFlag{
 background:url(../img/USA-flag.png);
 width:39px;
 height:25px;
@@ -19,7 +19,7 @@ display:inline-block;
 	border:3px solid black;
 }
 
-#CANADA_flag{
+#canadaFlag{
 background:url(../img/CA-flag.png);
 width:39px;
 height:25px;
@@ -63,6 +63,7 @@ margin-left:20px;
 
 .subscrition{
     @include span(1/4);
+	cursor:hover;
 	
 }
 
@@ -87,7 +88,7 @@ margin-left:20px;
 	
 }
 
-.button-container{
+.subscribe-button-container{
     @include span(1/1);
 	height:186px;
 	
@@ -162,4 +163,9 @@ margin-left:20px;
 
 .push-left-center-3{
     @include span(3/4, $offset:125/1000);
+}
+
+.full-width-color-1{
+	width:100%;
+	background:$color-1;
 }

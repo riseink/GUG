@@ -95,6 +95,20 @@
 }
 
 
+.FAQ-title{
+	
+	
+		color:$color-1;
+		background:#fff;
+		width:100%;
+		padding:20px 0;
+		margin:0;
+		text-align:center;
+		font-size:40px;
+		
+}
+
+
 .FAQ{
     @include span(1/1);
 	background:$color-1;
