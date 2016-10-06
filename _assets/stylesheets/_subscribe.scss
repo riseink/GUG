@@ -16,7 +16,7 @@ display:inline-block;
 }
 
 .active_subscribe{
-	border:3px solid black;
+	border:3px solid black!important;
 }
 
 #canadaFlag{
@@ -33,6 +33,17 @@ margin-left:20px;
 	position:absolute;
 	top:40px;
 	right:30px;
+	
+    @include respond-to(sm) {
+		position: relative;
+		left: 50%;
+		margin-left: -52px;
+		float:none;
+		top:auto;
+		right:auto;
+		margin-bottom:10px;
+		
+    }
 }
 
 
@@ -46,9 +57,25 @@ margin-left:20px;
 		font-weight:400;
 		color:$color-1;
 		font-size:35px;
+		float:left;
 		
 		
 	}
+	
+    @include respond-to(sm) {
+		h3{
+			font-family: "futura-pt", sans-serif;
+			font-weight:400;
+			color:$color-1;
+			font-size:35px;
+			line-height:45px;
+			float:none;
+			text-align:center;
+			margin-bottom:10px;
+		
+		
+		}
+    }
 	
 }
 
@@ -63,8 +90,11 @@ margin-left:20px;
 
 .subscrition{
     @include span(1/4);
-	cursor:hover;
-	
+	cursor:pointer;
+    @include respond-to(sm) {
+	    @include span(1/2);
+		
+	}
 }
 
 .subscription-option-1{
@@ -88,9 +118,24 @@ margin-left:20px;
 	
 }
 
+
+@include respond-to(sm) {
+	
+	.subscription-option-1,.subscription-option-2,
+	.subscription-option-3,.subscription-option-4,{
+		padding:10px;
+		
+	}
+	
+}
+
 .subscribe-button-container{
     @include span(1/1);
 	height:186px;
+	
+    @include respond-to(sm) {
+		height: 113px;
+	}
 	
 }
 
@@ -109,6 +154,21 @@ margin-left:20px;
 
 .pad-quarter-container{
 	padding:60px;
+	
+    @include respond-to(sm) {
+		padding:20px;
+		
+	}
+}
+
+.quarters{
+    @include span(1/4);
+	
+    @include respond-to(sm) {
+	    @include span(1/2);
+		
+	}
+	
 }
 
 .what-to-expect{
@@ -145,6 +205,9 @@ margin-left:20px;
 
 .bit-box-subscribe-container{
     @include span(1/4, $offset:375/1000);
+    @include respond-to(sm) {
+	    @include span(1/2, $offset:1/4);
+	}
 	
 }
 
@@ -163,6 +226,10 @@ margin-left:20px;
 
 .push-left-center-3{
     @include span(3/4, $offset:125/1000);
+	
+    @include respond-to(sm) {
+	    @include span(1);
+	}
 }
 
 .full-width-color-1{

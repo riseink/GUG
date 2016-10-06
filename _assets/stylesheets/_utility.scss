@@ -98,7 +98,6 @@ a.offset_anchor{
 	
 }
 
-.quarters{
-    @include span(1/4);
-	
+.clear-stroke{
+	border:3px solid transparent;
 }

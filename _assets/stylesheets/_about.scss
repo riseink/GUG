@@ -34,6 +34,19 @@
 	
     @include respond-to(sm) {
 		
+		h1{
+
+			padding:15px 0px 5px 0px;
+			margin:0;
+		
+		}
+		
+		p{
+			padding:0px 20px 0px 20px;
+			margin:0;
+		
+		
+		}
     }
 	
 	
@@ -65,6 +78,7 @@
 	}
 	
     @include respond-to(sm) {
+	    @include span(1/1);
 		
     }
 	
@@ -141,6 +155,11 @@
 		font-size:18px;
 		margin:0;
 		padding-bottom:30px;
+		
+	}
+	
+	@include respond-to(sm) {
+		padding:20px;
 		
 	}
 	
